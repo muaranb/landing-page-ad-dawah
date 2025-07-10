@@ -171,7 +171,6 @@ export default function OurTalent() {
 						</PaginationContent>
 					</Pagination>
 				</section>
-
 				<Footer />
 			</main>
 		</div>
