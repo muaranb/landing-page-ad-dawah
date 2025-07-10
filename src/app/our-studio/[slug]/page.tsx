@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronLeft, MapPin, Users } from "lucide-react";
 import { Button } from '@/components/ui/button';
 import Footer from "@/components/global/footer";
+import Link from "next/link";
 
 export default async function OurStudioDetail({
     params,
@@ -18,10 +19,10 @@ export default async function OurStudioDetail({
 					<Header />
                     <div className="pt-[25vh] flex flex-row">
                         <div className="basis-1/6">
-                            <div className="flex flex-row items-center cursor-pointer">
+                            <Link href="/our-studio" className="flex flex-row items-center cursor-pointer">
                                 <ChevronLeft className="me-2" />
                                 <div>Back</div>
-                            </div>
+                            </Link>
                         </div>
                         <div className="basis-5/6">
                             <div className="h-[24rem] bg-[url('/our-studio/1.jpg')] bg-bottom bg-cover rounded-t-2xl mb-8"></div>
@@ -32,7 +33,7 @@ export default async function OurStudioDetail({
                                         <div className="flex flex-row items-center gap-2 me-4">
                                             <div className="bg-[#FFC934] text-white p-2 rounded-full">
                                                 <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.20166 0.395186C5.26106 0.958169 3.53588 2.09058 2.25121 3.64469C0.96654 5.19879 0.182019 7.10243 0 9.10724H4.58979C4.85733 6.05645 5.7455 3.09179 7.20023 0.393758L7.20166 0.395186ZM4.58979 10.8928H0C0.18164 12.8977 0.965826 14.8015 2.25025 16.3559C3.53467 17.9102 5.25968 19.043 7.20023 19.6063C5.7455 16.9082 4.85733 13.9436 4.58979 10.8928ZM9.50086 19.9877C7.76188 17.2409 6.69571 14.1255 6.38841 10.8928H13.6102C13.3029 14.1255 12.2367 17.2409 10.4977 19.9877C10.1656 20.0041 9.83294 20.0041 9.50086 19.9877ZM12.7998 19.6048C14.7401 19.0416 16.465 17.9091 17.7494 16.355C19.0338 14.8009 19.8181 12.8974 20 10.8928H15.4102C15.1427 13.9436 14.2545 16.9082 12.7998 19.6063V19.6048ZM15.4102 9.10724H20C19.8184 7.10235 19.0342 5.19853 17.7498 3.64417C16.4653 2.08981 14.7403 0.957074 12.7998 0.393758C14.2545 3.09179 15.1427 6.05645 15.4102 9.10724ZM9.50086 0.0123641C9.83341 -0.00412135 10.1666 -0.00412135 10.4991 0.0123641C12.2376 2.75923 13.3033 5.87467 13.6102 9.10724H6.38984C6.70109 5.85468 7.76965 2.7364 9.50086 0.0123641Z" fill="currentColor"/>
+                                                    <path fillRule="evenodd" clipRule="evenodd" d="M7.20166 0.395186C5.26106 0.958169 3.53588 2.09058 2.25121 3.64469C0.96654 5.19879 0.182019 7.10243 0 9.10724H4.58979C4.85733 6.05645 5.7455 3.09179 7.20023 0.393758L7.20166 0.395186ZM4.58979 10.8928H0C0.18164 12.8977 0.965826 14.8015 2.25025 16.3559C3.53467 17.9102 5.25968 19.043 7.20023 19.6063C5.7455 16.9082 4.85733 13.9436 4.58979 10.8928ZM9.50086 19.9877C7.76188 17.2409 6.69571 14.1255 6.38841 10.8928H13.6102C13.3029 14.1255 12.2367 17.2409 10.4977 19.9877C10.1656 20.0041 9.83294 20.0041 9.50086 19.9877ZM12.7998 19.6048C14.7401 19.0416 16.465 17.9091 17.7494 16.355C19.0338 14.8009 19.8181 12.8974 20 10.8928H15.4102C15.1427 13.9436 14.2545 16.9082 12.7998 19.6063V19.6048ZM15.4102 9.10724H20C19.8184 7.10235 19.0342 5.19853 17.7498 3.64417C16.4653 2.08981 14.7403 0.957074 12.7998 0.393758C14.2545 3.09179 15.1427 6.05645 15.4102 9.10724ZM9.50086 0.0123641C9.83341 -0.00412135 10.1666 -0.00412135 10.4991 0.0123641C12.2376 2.75923 13.3033 5.87467 13.6102 9.10724H6.38984C6.70109 5.85468 7.76965 2.7364 9.50086 0.0123641Z" fill="currentColor"/>
                                                 </svg>
                                             </div>
                                             <div className="bg-[#FFC934] text-white p-2 rounded-full">
@@ -115,14 +116,14 @@ export default async function OurStudioDetail({
                                         <Card key={i} className="pt-0 pb-6 gap-0 rounded-xl overflow-hidden">
                                             <div className="h-[15rem] bg-[url('/home/usaha-micro-2.png')] bg-cover bg-start mb-4	"></div>
                                             <CardContent>
-                                                <p className="flex flex-row justify-between">
+                                                <div className="flex flex-row justify-between">
                                                     <div className="font-bold text-lg">Sarah James</div>
                                                     <div className="bg-[#FCCE4D] rounded-full px-4 flex items-center text-sm">Designer</div>
-                                                </p>
-                                                <p className="flex mb-4 items-center">
+                                                </div>
+                                                <div className="flex mb-4 items-center">
                                                     <MapPin className="text-[#FFC934] me-1" size={18} />
                                                     <div className="text-xs">Studio ABCD</div>
-                                                </p>
+                                                </div>
                                                 <p className="text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                 <div className="flex justify-center">
                                                     <Button className="rounded-full cursor-pointer bg-[#FFC934] px-16 py-5">Learn More</Button>

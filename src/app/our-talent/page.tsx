@@ -129,14 +129,14 @@ export default function OurTalent() {
 							<Card key={i} className="pt-0 pb-6 gap-0 rounded-xl overflow-hidden">
 								<div className="h-[15rem] bg-[url('/home/usaha-micro-2.png')] bg-cover bg-start mb-4	"></div>
 								<CardContent>
-									<p className="flex flex-row justify-between">
+									<div className="flex flex-row justify-between">
 										<div className="font-bold text-lg">Sarah James</div>
 										<div className="bg-[#FCCE4D] rounded-full px-4 flex items-center text-sm">Designer</div>
-									</p>
-									<p className="flex mb-4 items-center">
+									</div>
+									<div className="flex mb-4 items-center">
 										<MapPin className="text-[#FFC934] me-1" size={18} />
 										<div className="text-xs">Studio ABCD</div>
-									</p>
+									</div>
 									<p className="text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									<div className="flex justify-center">
 										<Button className="rounded-full cursor-pointer bg-[#FFC934] px-16 py-5">Learn More</Button>

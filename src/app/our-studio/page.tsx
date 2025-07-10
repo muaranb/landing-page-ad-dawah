@@ -27,6 +27,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination"
 import Footer from "@/components/global/footer";
+import Link from "next/link";
 
 export default function OurStudio() {
 	return (
@@ -144,7 +145,9 @@ export default function OurStudio() {
 									</div>
 									<p className="text-sm mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									<div className="flex justify-center">
-										<Button className="rounded-full cursor-pointer bg-[#FFC934] px-16 py-5">Learn More</Button>
+										<Button className="rounded-full cursor-pointer bg-[#FFC934] px-16 py-5" asChild>
+											<Link href="/our-studio/GingerSun_Games">Learn More</Link>
+										</Button>
 									</div>
 								</CardContent>
 							</Card>
